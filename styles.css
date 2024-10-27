@@ -1,0 +1,1002 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1c1c1c; /* Dark background */
+  color: #e5e5e5;
+  line-height: 1.6;
+}
+
+/* Header Styling */
+.header {
+  background: #121212; /* Dark header background */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+/* Container Styling */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navbar Styling */
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  font-size: 18px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #2ce6e9; /* Primary button color */
+  font-weight: bold;
+  padding: 10px 18px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  background-color: rgba(14, 18, 18, 0.115);
+  box-shadow: 0px 4px 8px rgba(44, 132, 173, 0.4); /* Soft hover shadow */
+}
+
+/* Call-to-Action Button */
+.cta-btn {
+  flex-shrink: 0;
+}
+
+.cta-btn .btn {
+  background: linear-gradient(45deg, #1ca4a7, #2c84ad);
+  color: white;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0px 4px 10px rgba(44, 132, 173, 0.3);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.cta-btn .btn:hover {
+  background: linear-gradient(45deg, #1ca4a7, #2c84ad); /* Reverse gradient on hover */
+  transform: scale(1.05); /* Slight hover scale */
+  box-shadow: 0px 6px 15px rgba(28, 164, 167, 0.5); /* Enhanced shadow */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .navbar ul {
+      display: none;
+  }
+
+  .cta-btn .btn {
+      font-size: 16px;
+      padding: 10px 20px;
+  }
+}
+
+/* Button Styling */
+.download-button {
+  background: linear-gradient(45deg, #1ca4a7, #2c84ad);
+  color: white;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0px 4px 10px rgba(44, 132, 173, 0.3);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.download-button:hover {
+background: linear-gradient(45deg, #2c84ad, #1ca4a7); /* Reverse gradient on hover */
+transform: scale(1.05); /* Slight hover scale */
+box-shadow: 0px 6px 15px rgba(28, 164, 167, 0.5); /* Enhanced shadow */
+}
+
+
+
+/* Footer Styling */
+footer {
+  background: linear-gradient(135deg, #1a1a1a, #333333); /* Dark gradient background */
+  color: #e6e6e6; /* Light text color */
+  padding: 20px 0; /* Space above and below the footer text */
+  display: flex; /* Enable Flexbox */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  text-align: center; /* Center align footer content */
+  font-size: 16px;
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3); /* Top shadow for separation from page */
+}
+
+footer p {
+  margin: 0; /* Remove default margin */
+  font-weight: 500; /* Semi-bold text for better readability */
+}
+
+footer p a {
+  color: #20d5d8; /* Link color to match other sections */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+footer p a:hover {
+  color: #2ce6e9; /* Hover color for link */
+  text-shadow: 0 0 5px rgba(44, 228, 233, 0.8); /* Glow effect on hover */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  footer {
+    padding: 15px 0; /* Reduce padding on smaller screens */
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+/* Hero Section Styles */
+.hero {
+  background: linear-gradient(135deg, #121212, #1a1a1a); /* Darker gradient for hero background */
+  color: rgb(233, 226, 153);
+  padding: 100px 20px;
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  min-height: 100vh; /* Full viewport height for hero section */
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero .subheading {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #e6dccf; /* Softer contrast color */
+  font-weight: 600;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  letter-spacing: 1.5px;
+}
+
+/* Hero Buttons */
+.hero-buttons {
+  margin-top: 30px;
+}
+
+.hero .btn {
+  background: linear-gradient(45deg, #1ca4a7, #2c84ad);
+  color: white;
+  padding: 15px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Darker shadow for contrast */
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s;
+}
+
+/* Enhanced Button Hover Effect */
+.hero .btn:hover {
+  background: linear-gradient(45deg, #2c84ad, #1ca4a7); /* Reverse gradient on hover */
+  box-shadow: 0 8px 16px rgba(44, 132, 173, 0.5); /* Stronger, softer shadow */
+  transform: translateY(-3px) scale(1.05); /* Lift effect with scale */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .hero {
+    padding: 70px 10px;
+  }
+  .hero h1 {
+    font-size: 34px;
+  }
+  .hero .subheading {
+    font-size: 16px;
+  }
+  .hero .btn {
+    font-size: 16px;
+    padding: 12px 24px;
+    margin: 0 8px;
+  }
+}
+
+/* Tablet Responsiveness */
+@media (max-width: 1024px) {
+  .hero h1 {
+    font-size: 42px;
+  }
+  .hero .subheading {
+    font-size: 18px;
+  }
+  .hero .btn {
+    font-size: 17px;
+    padding: 14px 26px;
+    margin: 0 8px;
+  }
+}
+
+
+/* About Me Section Styles */
+
+/* About Me Section */
+.about-me h2 {
+  font-size: 42px;
+  color: #e6e6e6;
+  margin-bottom: 50px;
+  font-weight: 700;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  position: relative; /* For positioning the underline */
+  display: inline-block; /* Ensure the underline only applies to the text */
+  padding-bottom: 10px; /* Space between text and underline */
+}
+
+/* Underline Style */
+.about-me h2::after {
+  content: ''; /* Required for pseudo-element */
+  position: absolute;
+  left: 50%; /* Centering the underline */
+  bottom: 0; /* Position it below the text */
+  width: 100%; /* Full width of the heading */
+  height: 5px; /* Thickness of the underline */
+  background: #3be5e8; /* Color of the underline */
+  transform: translateX(-50%); /* Centering */
+}
+.about-me {
+  background: #1e1e1e; /* Darker background */
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.about-me h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  margin-bottom: 30px;
+  color: #20d5d8; /* Change color on hover */
+  text-shadow: 0 0 15px rgba(44, 228, 233, 0.7), 0 0 30px rgba(44, 228, 233, 0.5);
+}
+
+/* Hover Effect for Heading */
+.about-me h2:hover {
+  color: #20d5d8; /* Change color on hover */
+  text-shadow: 0 0 15px rgba(44, 228, 233, 0.7), 0 0 30px rgba(44, 228, 233, 0.5); /* Glow effect */
+}
+
+
+.about-text {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #cccccc;
+}
+
+.about-text p {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+
+
+  
+/* Qualifications Section Code and Layout */
+.qualifications {
+  background: linear-gradient(135deg, #1a1a1a, #333333);
+  padding: 100px 20px;
+  text-align: center;
+  color: #e6e6e6;
+}
+
+/* Qualifications Heading with Underline and Glow */
+.qualifications h2 {
+  font-size: 42px;
+  margin-bottom: 60px;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+  color: #20d5d8;
+  text-shadow: 0 0 15px rgba(44, 228, 233, 0.7), 0 0 30px rgba(44, 228, 233, 0.5);
+}
+
+/* Underline Style */
+.qualifications h2::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background: #20d5d8;
+  transform: translateX(-50%);
+  box-shadow: 0 0 15px rgba(32, 213, 216, 0.7);
+}
+
+
+
+/* Qualifications Content Flex Layout */
+.qualification-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Qualification Item Styling */
+.qualification-item {
+  background-color: #1a1a1a;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 15px;
+  max-width: 100%;
+  flex: 1;
+  color: #e6e6e6;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s, border-left 0.3s;
+  cursor: pointer;
+  border-left: 5px solid transparent;
+}
+
+/* Hover Effects for Qualification Items */
+.qualification-item:hover {
+  box-shadow: 0 15px 40px rgba(44, 228, 233, 0.3);
+  border-left: 5px solid #20d5d8;
+}
+
+/* Qualification Item Heading Styling */
+.qualification-item h3 {
+  font-size: 24px;
+  color: #20d5d8;
+  margin-bottom: 15px;
+  font-weight: 600;
+  position: relative; /* Position for underline */
+  transition: color 0.3s;
+}
+
+/* Underline After Qualification Heading */
+.qualification-item h3::after {
+  content: '';
+  display: block;
+  width: 100%; /* Width of the underline */
+  height: 1px; /* Thickness of the underline */
+  background-color: #3498db;
+  margin-top: 5px; /* Space between heading and underline */
+  border-radius: 3px;
+}
+
+
+/* Qualification Description Styling */
+.qualification-item p {
+  font-size: 16px;
+  color: #cccccc;
+  margin-bottom: 10px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .qualification-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .qualification-item {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+/* Tablet Responsiveness */
+@media (max-width: 1024px) {
+  .qualification-item {
+    max-width: 45%;
+  }
+}
+
+
+
+
+html {
+  scroll-padding-top: 80px; /* Adjust this value to match your header height */
+  scroll-behavior: smooth;
+}
+
+
+
+/* Skills Section Background and Layout */
+.skills {
+  background: linear-gradient(135deg, #1a1a1a, #333333);
+  padding: 100px 20px;
+  text-align: center;
+  color: #e6e6e6;
+}
+
+/* Skills Heading with Underline and Glow */
+.skills h2 {
+  font-size: 42px;
+  margin-bottom: 50px;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+  color: #20d5d8;
+  text-shadow: 0 0 15px rgba(44, 228, 233, 0.7), 0 0 30px rgba(44, 228, 233, 0.5);
+}
+
+/* Underline Style */
+.skills h2::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background: #20d5d8;
+  transform: translateX(-50%);
+  box-shadow: 0 0 15px rgba(32, 213, 216, 0.7);
+}
+
+
+
+/* Skills Content Flex Layout */
+.skills-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Skill Item Styling */
+.skill-item {
+  background-color: #1a1a1a;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 300px;
+  flex: 1;
+  color: #e6e6e6;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s, border-left 0.3s;
+  border-left: 5px solid transparent; /* Border indicator */
+}
+
+/* Hover Effects for Skill Items */
+.skill-item:hover {
+  box-shadow: 0 15px 40px rgba(44, 228, 233, 0.3);
+  border-left: 5px solid #20d5d8; /* Highlight border on hover */
+}
+
+/* Skill Item Heading Styling */
+.skill-item h3 {
+  font-size: 24px;
+  color: #20d5d8;
+  margin-bottom: 15px;
+  font-weight: 600;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+  transition: color 0.3s;
+}
+
+
+/* Skill List Styling */
+.skill-item ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skill-item ul li {
+  font-size: 18px;
+  color: #cccccc;
+  margin-bottom: 12px;
+  padding: 8px 0;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+/* Hover Effect for Skill List Items */
+.skill-item ul li:hover {
+  color: #20d5d8;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .skills-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-item {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+/* Tablet Responsiveness */
+@media (max-width: 1024px) {
+  .skill-item {
+    max-width: 45%;
+  }
+}
+
+
+
+
+
+/* Work Experience Code */
+
+/* Work Experience Section with Gradient Background */
+.work-experience {
+  background: linear-gradient(135deg, #1a1a1a, #333333);
+  padding: 100px 10%; /* Reduced padding for top/bottom, and side margins for centering */
+  text-align: center;
+  margin: 0 auto; /* Center the section within the page */
+}
+
+/* Work Experience Heading Alignment */
+.experience-heading {
+  font-size: 42px;
+  color: #2ce6e9;
+  margin-bottom: 50px;
+  font-weight: 700;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Enhanced shadow for bold effect */
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+  margin-top: 0; /* Consistent top margin to align with other sections */
+}
+
+/* Container Centering */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px; /* Slight padding on sides for better alignment */
+}
+
+
+/* Underline Style for Heading */
+.experience-heading::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background: #2ce6e9;
+  transform: translateX(-50%);
+  box-shadow: 0 0 15px rgba(44, 228, 233, 0.7); /* Glow effect for underline */
+}
+
+/* Grid for Experience Items */
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/* Individual Experience Box */
+.experience-item {
+  background-color: #1e1e1e; /* Slightly lighter shade for card background */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: left;
+}
+
+/* Hover Effect for Experience Boxes */
+.experience-item:hover {
+  box-shadow: 0 20px 50px rgba(44, 228, 233, 0.4); /* Blue glow shadow effect */
+  border-left: 5px solid #2ce6e9;
+}
+
+/* Experience Title */
+.experience-item h2 {
+  font-size: 24px;
+  color: #2ce6e9;
+  margin-bottom: 15px;
+  font-weight: 600;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+}
+
+/* Experience Description */
+.experience-item p {
+  font-size: 16px;
+  color: #bbb; /* Light grey for text */
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* View Certificate Button */
+.btn-view-certificate {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #ffffff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.2); /* Subtle blue shadow */
+}
+
+/* Hover Effect on Button */
+.btn-view-certificate:hover {
+  background-color: #2980b9;
+  box-shadow: 0 12px 30px rgba(52, 152, 219, 0.5); /* Deeper shadow on hover */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .experience-heading {
+    font-size: 36px;
+  }
+
+  .experience-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+/* Tablet Responsiveness */
+@media (max-width: 1024px) {
+  .experience-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
+
+/* Projects Section Code */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Projects Section Background - Dark Gradient */
+.projects-section {
+  width: 100%;
+  min-height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1a1a1a, #333333); /* Dark gradient */
+  padding: 0 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Project Heading with Underline Effect */
+.project-heading {
+  font-size: 42px;
+  color: #2ce6e9;
+  margin-bottom: 50px;
+  font-weight: 700;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+/* Underline Effect */
+.project-heading::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background: #2ce6e9;
+  box-shadow: 0 0 15px rgba(44, 228, 233, 0.7), 0 0 30px rgba(44, 228, 233, 0.5);
+}
+
+/* Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Individual Project Box with Dark Styling and Hover Effect */
+.project-item {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Shadow effect for depth */
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: left;
+  cursor: pointer;
+  border-left: 5px solid transparent;
+  color: #e6e6e6; /* Light text for readability on dark background */
+}
+
+/* Project Title */
+.project-item h2 {
+  font-size: 24px;
+  color: #2ce6e9; /* Light blue for project titles */
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+
+/* Project Description */
+.project-item p {
+  font-size: 16px;
+  color: #bbbbbb; /* Light grey for text */
+  margin-bottom: 15px;
+  transition: color 0.3s;
+}
+
+/* Hover Effect for Project Boxes */
+.project-item:hover {
+  box-shadow: 0 15px 40px rgba(44, 228, 233, 0.4); /* Subtle hover shadow */
+  border-left: 5px solid #2ce6e9; /* Highlighted left border */
+}
+
+/* View Project Button */
+.btn-view-project {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2ce6e9;
+  color: #1a1a1a;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  font-weight: bold;
+}
+
+/* Hover Effect on Button */
+.btn-view-project:hover {
+  background-color: #22b3b5;
+  box-shadow: 0 4px 10px rgba(44, 228, 233, 0.3);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+/* Contact Section Background */
+.contact-section {
+  width: 100%;
+  min-height: 100vh; /* Ensures full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1a1a1a, #333333); /* Dark gradient */
+  padding: 0 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Contact Heading with Underline and Glow Effect */
+.contact-heading {
+  font-size: 42px;
+  color: #2ce6e9;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 50px;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+/* Underline Effect for Heading */
+.contact-heading::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background: #2ce6e9;
+  box-shadow: 0 0 15px rgba(44, 228, 233, 0.7), 0 0 30px rgba(44, 228, 233, 0.5);
+}
+
+/* Contact Box Styling */
+.contact-box {
+  background-color: #1a1a1a;
+  padding: 40px;
+  text-align: center;
+  width: 400px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: #e6e6e6; /* Light text for readability */
+}
+
+/* Hover Effect for Contact Box */
+.contact-box:hover {
+  box-shadow: 0 15px 40px rgba(44, 228, 233, 0.4); /* Light blue shadow on hover */
+}
+
+/* Button Styling for Contact Items */
+.contact-button {
+  display: inline-block;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  background-color: #2ce6e9; /* Blue button */
+  color: #1a1a1a;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+/* Hover Effect for Buttons */
+.contact-button:hover {
+  background-color: #22b3b5;
+  box-shadow: 0 8px 20px rgba(44, 228, 233, 0.3);
+}
+
+/* Responsive Design for Contact Section */
+@media (max-width: 768px) {
+  .contact-box {
+    width: 90%; /* Adjusts box width for smaller screens */
+  }
+}
+
+
+
+/* Cerification Section Code */
+
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #1a1a1a, #333333); /* Dark gradient for a consistent theme */
+  font-family: Arial, sans-serif;
+}
+
+/* Certifications Section Background */
+#certifications {
+  width: 100%;
+  min-height: 100vh;
+  padding: 80px 20px; /* Padding for top and sides */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1a1a1a, #333333); /* Dark gradient for certifications section */
+  color: #e6e6e6;
+}
+
+/* Certifications Heading Styling with Underline and Glow */
+#certifications h2 {
+  font-size: 42px;
+  color: #2ce6e9;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 40px;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+/* Underline Effect for Heading */
+#certifications h2::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background: #2ce6e9;
+  box-shadow: 0 0 15px rgba(44, 228, 233, 0.7), 0 0 30px rgba(44, 228, 233, 0.5);
+}
+
+/* Certification Boxes Container */
+.certification-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Even spacing between certification boxes */
+}
+
+/* Certification Box Styling */
+.certification {
+  background-color: #1a1a1a; /* Dark box background */
+  padding: 25px;
+  width: 300px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Dark shadow for depth */
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover transitions */
+  text-align: center;
+  color: #e6e6e6; /* Light text for readability */
+}
+
+/* Hover effect for Certification Boxes */
+.certification:hover {
+  box-shadow: 0 15px 40px rgba(44, 228, 233, 0.4); /* Light blue shadow on hover */
+}
+
+/* Certification Title Styling */
+.certification h3 {
+  font-size: 24px;
+  color: #2ce6e9; /* Blue title color */
+  margin-bottom: 10px;
+}
+
+/* Certification Description Styling */
+.certification p {
+  margin: 10px 0;
+  color: #aaaaaa; /* Slightly lighter gray for text */
+  font-size: 16px;
+}
+
+/* Button Styling */
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #2ce6e9;
+  color: #1a1a1a;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect for Buttons */
+.btn:hover {
+  background-color: #22b3b5;
+  box-shadow: 0 8px 20px rgba(44, 228, 233, 0.3);
+}
+
+/* Responsive Design for Certifications Section */
+@media (max-width: 768px) {
+  #certifications {
+    padding: 10px; /* Adjusted padding for smaller screens */
+  }
+
+  .certification {
+    width: 90%; /* Full width on smaller screens */
+  }
+}
