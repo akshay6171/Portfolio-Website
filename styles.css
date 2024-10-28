@@ -353,12 +353,11 @@ footer p a:hover {
   border-radius: 10px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   border-left: 5px solid #20d5d8;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: box-shadow 0.3s;
 }
 
 /* Hover Effect for Qualification Item */
 .qualification-item:hover {
-  transform: translateY(-5px);
   box-shadow: 0 15px 40px rgba(44, 228, 233, 0.3);
 }
 
@@ -450,7 +449,7 @@ html {
   flex: 1;
   color: #e6e6e6;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s, box-shadow 0.3s, border-left 0.3s;
+  transition: box-shadow 0.3s, border-left 0.3s;
   border-left: 5px solid transparent; /* Border indicator */
 }
 
@@ -574,14 +573,14 @@ html {
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s, box-shadow 0.3s;
+  border-left: 5px solid #20d5d8; /* Highlight border on hover */
+  transition:box-shadow 0.3s;
   text-align: left;
 }
 
 /* Hover Effect for Experience Boxes */
 .experience-item:hover {
-  box-shadow: 0 20px 50px rgba(44, 228, 233, 0.4); /* Blue glow shadow effect */
-  border-left: 5px solid #2ce6e9;
+  box-shadow: 0 15px 40px rgba(44, 228, 233, 0.3);
 }
 
 /* Experience Title */
@@ -696,7 +695,8 @@ html {
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s, box-shadow 0.3s;
+  border-left: 5px solid #2ce6e9;
+  transition:box-shadow 0.3s;
   color: #e6e6e6;
   text-align: left;
   cursor: pointer;
@@ -705,7 +705,6 @@ html {
 /* Hover Effect for Project Boxes */
 .project-item:hover {
   box-shadow: 0 15px 40px rgba(44, 228, 233, 0.4);
-  border-left: 5px solid #2ce6e9;
 }
 
 /* Project Title */
@@ -805,14 +804,15 @@ html {
   width: 400px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Soft shadow */
   border-radius: 10px;
-  transition: transform 0.3s, box-shadow 0.3s;
+  border-left: 5px solid #2ce6e9;
+  transition:box-shadow 0.3s;
   color: #e6e6e6; /* Light text for readability */
 }
 
 /* Hover Effect for Contact Box */
 .contact-box:hover {
   box-shadow: 0 20px 50px rgba(44, 228, 233, 0.4); /* Blue glow shadow effect */
-  border-left: 5px solid #2ce6e9;}
+}
 
 /* Button Styling for Contact Items */
 .contact-button {
@@ -830,11 +830,7 @@ html {
   transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
 }
 
-/* Hover Effect for Buttons */
-.contact-button:hover {
-  box-shadow: 0 20px 50px rgba(44, 228, 233, 0.4); /* Blue glow shadow effect */
-  border-left: 5px solid #2ce6e9;
-}
+
 
 /* Responsive Design for Contact Section */
 @media (max-width: 768px) {
@@ -900,7 +896,8 @@ html {
   width: 100%; /* Full width on larger screens */
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Dark shadow for depth */
   border-radius: 10px;
-  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover transitions */
+  border-left: 5px solid #2ce6e9;
+  transition: box-shadow 0.3s; /* Smooth hover transitions */
   text-align: left; /* Left-align text */
   color: #e6e6e6;
 }
@@ -908,7 +905,7 @@ html {
 /* Hover effect for Certification Boxes */
 .certification:hover {
   box-shadow: 0 20px 50px rgba(44, 228, 233, 0.4); /* Blue glow shadow effect */
-  border-left: 5px solid #2ce6e9;}
+}
 
 /* Certification Title Styling */
 .certification h3 {
