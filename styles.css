@@ -438,6 +438,7 @@ html {
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 30px;
+
 }
 
 /* Skill Item Styling */
@@ -810,8 +811,8 @@ html {
 
 /* Hover Effect for Contact Box */
 .contact-box:hover {
-  box-shadow: 0 15px 40px rgba(44, 228, 233, 0.4); /* Light blue shadow on hover */
-}
+  box-shadow: 0 20px 50px rgba(44, 228, 233, 0.4); /* Blue glow shadow effect */
+  border-left: 5px solid #2ce6e9;}
 
 /* Button Styling for Contact Items */
 .contact-button {
@@ -831,8 +832,8 @@ html {
 
 /* Hover Effect for Buttons */
 .contact-button:hover {
-  background-color: #22b3b5;
-  box-shadow: 0 8px 20px rgba(44, 228, 233, 0.3);
+  box-shadow: 0 20px 50px rgba(44, 228, 233, 0.4); /* Blue glow shadow effect */
+  border-left: 5px solid #2ce6e9;
 }
 
 /* Responsive Design for Contact Section */
@@ -906,8 +907,8 @@ html {
 
 /* Hover effect for Certification Boxes */
 .certification:hover {
-  box-shadow: 0 15px 40px rgba(44, 228, 233, 0.4); /* Light blue shadow on hover */
-}
+  box-shadow: 0 20px 50px rgba(44, 228, 233, 0.4); /* Blue glow shadow effect */
+  border-left: 5px solid #2ce6e9;}
 
 /* Certification Title Styling */
 .certification h3 {
