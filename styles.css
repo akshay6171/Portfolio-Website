@@ -1000,3 +1000,155 @@ body {
     width: 90%; /* Full width on smaller screens */
   }
 }
+
+
+/* General Styling for Mobile */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.cta-btn {
+  margin-top: 10px;
+}
+
+/* Hero Section */
+.hero {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 32px;
+}
+
+.hero .subheading {
+  font-size: 18px;
+}
+
+/* About Me Section */
+.about-me {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.about-me .container {
+  max-width: 100%;
+}
+
+.about-me p {
+  font-size: 16px;
+}
+
+/* Qualifications Section */
+.qualifications {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.qualification-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qualification-item {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Skills Section */
+.skills {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.skills-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-item {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact-box {
+  width: 100%;
+  max-width: 350px;
+}
+
+/* Footer */
+footer .container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  /* Adjust layout for tablets and small screens */
+  .navbar ul {
+    gap: 10px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .qualifications h2,
+  .skills h2,
+  .contact-heading {
+    font-size: 36px;
+  }
+
+  .qualification-item h3,
+  .skill-item h3 {
+    font-size: 20px;
+  }
+
+  /* Responsive Grid Layout */
+  .experience-grid, .projects-grid, .skills-content {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* For larger tablets and smaller laptops */
+  .experience-grid, .projects-grid, .skills-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .qualification-content {
+    flex-direction: row;
+    gap: 15px;
+  }
+}
